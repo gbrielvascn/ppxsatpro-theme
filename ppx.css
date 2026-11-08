@@ -311,3 +311,7 @@ body{overflow-x:clip}
 .nav-desktop .desktop-list-subitems>li:not(:has(.list-subitems)) .nav-list-link-heading{font-weight:600!important;color:#e6e9ee!important}
 .nav-desktop .list-subitems .nav-list-link{letter-spacing:0!important;color:#a9b0bb!important}
 .nav-desktop .list-subitems .nav-list-link:hover{color:#fff!important}
+/* Hover do menu: só sublinhado fino, texto sempre branco */
+.nav-desktop .nav-main-item>a,.nav-desktop .nav-main-item>a:hover,.nav-desktop .nav-main-item:hover>a{background:none!important;color:#fff!important;opacity:1!important;position:relative}
+.nav-desktop .nav-main-item>a:after{content:"";position:absolute;left:12px;right:12px;bottom:0;height:1px;background:#fff;transform:scaleX(0);transition:transform .25s}
+.nav-desktop .nav-main-item>a:hover:after,.nav-desktop .nav-main-item:hover>a:after{transform:scaleX(1)}
