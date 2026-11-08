@@ -15,17 +15,6 @@
 .section-icon-text .icon-text-item-title{font-family:var(--heading-font)!important;font-size:20px!important;text-transform:uppercase;letter-spacing:.04em;color:#fff;margin-bottom:6px}
 .section-icon-text .icon-text-item-description,.section-icon-text .icon-text-item p{color:#a9b0bb!important;font-size:14px!important;line-height:1.5}
 
-/* CTA "Precisa de ajuda" */
-.section-hero .media-content{right:auto!important;width:56%;max-width:none!important;padding:0 6% 0 8%!important;align-items:flex-start!important;text-align:left!important;background:linear-gradient(90deg,#030916 0%,#030916e6 60%,#03091600)}
-.section-hero .media-content>*{text-align:left!important;max-width:560px}
-.section-hero .heading-block:after{margin-left:0!important}
-@media (max-width:767px){.section-hero .media-content{width:100%;padding:0 24px!important;background:#030916cc}.section-hero .heading-block{font-size:32px!important}}
-.section-hero .heading-block{font-size:46px!important}
-.section-hero p,.section-hero .text-content{color:#c3c9d2!important;font-size:17px!important;line-height:1.6}
-.section-hero .btn{display:inline-flex!important;align-items:center;gap:10px;margin-top:8px;background:#1fa855!important;border:0!important;border-radius:99px!important;padding:16px 32px 16px 26px!important;font-size:16px!important;font-weight:600!important;letter-spacing:.04em!important;text-transform:none!important;color:#fff!important}
-.section-hero .btn:hover{background:#25d366!important}
-.section-hero .btn:before{content:"";width:22px;height:22px;background:#fff;-webkit-mask:url(https://cdn.jsdelivr.net/npm/simple-icons@9.0.0/icons/whatsapp.svg) center/contain no-repeat;mask:url(https://cdn.jsdelivr.net/npm/simple-icons@9.0.0/icons/whatsapp.svg) center/contain no-repeat}
-
 /* Opções de frete (carrinho e produto) */
 .js-shipping-radio.box{background:var(--pc)!important;border:1px solid var(--pl)!important;border-radius:0!important;transition:border-color .2s}
 .js-shipping-radio.box.selected,.js-shipping-radio.box:hover{border-color:var(--pb)!important}
@@ -110,3 +99,28 @@
 .template-account-register .account-form-container{max-width:560px}
 .account-form-subtitle{color:var(--pm)!important;text-align:center;font-size:15px;line-height:1.5;margin:0 0 30px!important;padding-bottom:24px;border-bottom:1px solid var(--pl)}
 .account-form-container .g-recaptcha,.account-form-container [class*=recaptcha]{display:flex;justify-content:center;margin:8px 0 4px}
+
+/* ===== CTA "Precisa de ajuda" v3: banner contido, premium ===== */
+.section-hero{padding:24px 40px 104px!important;background:#000}
+.section-hero .hero{max-width:1200px;margin:0 auto;height:440px!important;min-height:0!important;border:1px solid var(--pl);overflow:hidden;position:relative}
+.section-hero .media-visual,.section-hero picture,.section-hero img{height:100%!important}
+.section-hero img{object-fit:cover;object-position:70% center}
+.section-hero .media-overlay{opacity:1!important;background:linear-gradient(90deg,#020611 0%,#020611f0 40%,#02061166 70%,#02061100 100%)!important}
+.section-hero .hero:after{content:"";position:absolute;left:-120px;bottom:-160px;width:520px;height:420px;background:radial-gradient(closest-side,#1677e655,transparent);pointer-events:none}
+.section-hero .media-content{position:absolute!important;inset:0 auto 0 0!important;width:58%;padding:0 64px!important;display:flex!important;flex-direction:column;justify-content:center!important;align-items:flex-start!important;text-align:left!important;background:none!important;z-index:2}
+.section-hero .media-content>*{text-align:left!important}
+.section-hero .media-content:before{content:"Atendimento especializado";display:block;font:600 12px Barlow,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#4ea3ff;margin-bottom:14px}
+.section-hero .heading-block{font-size:48px!important;line-height:1.02!important;max-width:620px;margin:0 0 16px!important;padding:0!important}
+.section-hero .heading-block:after{display:none!important}
+.section-hero p,.section-hero .text-content{color:#a9b0bb!important;font-size:16px!important;line-height:1.6;max-width:480px;margin:0!important}
+.section-hero .btn{display:inline-flex!important;align-items:center;gap:10px;margin-top:28px!important;background:#fff!important;color:#000!important;border:0!important;border-radius:99px!important;padding:15px 28px 15px 22px!important;font:700 15px Barlow,sans-serif!important;letter-spacing:.02em!important;text-transform:none!important;transition:transform .2s,box-shadow .2s}
+.section-hero .btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px -10px #25d36699}
+.section-hero .btn:before{content:"";width:22px;height:22px;background:#1fa855;-webkit-mask:url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/svgs/brands/whatsapp.svg) center/contain no-repeat;mask:url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/svgs/brands/whatsapp.svg) center/contain no-repeat}
+.section-hero .media-content:after{content:"Orçamento sem compromisso, direto com a nossa equipe";display:block;margin-top:16px;font-size:13px;color:#7d8590}
+@media (max-width:767px){
+ .section-hero{padding:8px 16px 64px!important}
+ .section-hero .hero{height:520px!important}
+ .section-hero .media-overlay{background:linear-gradient(0deg,#020611 0%,#020611e6 55%,#02061133 100%)!important}
+ .section-hero .media-content{inset:auto 0 0 0!important;width:100%;padding:28px 24px 32px!important;justify-content:flex-end!important}
+ .section-hero .heading-block{font-size:32px!important}
+}
