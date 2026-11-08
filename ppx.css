@@ -343,3 +343,9 @@ body{overflow-x:clip}
 /* Hover dos botões brancos: só escurece levemente, sem sombra */
 .section-hero .btn:hover,.section-banners .btn:hover,.section-slideshow .btn:hover{background:#dcdcdc!important;color:#000!important;box-shadow:none!important;transform:none!important}
 .btn-primary:hover,.js-addtocart:hover,.js-item-product .btn:hover{box-shadow:none!important;transform:none!important}
+/* Categorias: proporção igual à das fotos (4:3) para não cortar o produto */
+.section-banners .banner-block{min-height:0!important;aspect-ratio:4/3}
+.section-banners .banner-image-container img{object-position:center center}
+.section-banners .media-content{padding:72px 24px 22px!important}
+.section-banners .heading-block{margin:0 0 12px!important}
+@media (max-width:767px){.section-banners .banner-block{min-height:0!important}}
