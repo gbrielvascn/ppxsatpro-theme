@@ -43,7 +43,7 @@
 .footer-content{position:relative}
 .footer-legal-container{flex:0 0 100%;border-top:1px solid var(--pl);padding-top:22px;margin-top:4px}
 .footer-legal-container,.footer-legal-container *{text-align:left!important;justify-content:flex-start!important}
-.footer-institutional-description p+p{position:absolute;left:50%;transform:translateX(-50%);width:min(1200px,calc(100% - 80px));bottom:var(--ppx-credit-bottom,58px);margin:0;text-align:right;font-size:12px!important;color:#7d8590!important;pointer-events:none}
+.footer-institutional-description p+p{position:absolute;left:50%;transform:translateX(-50%);width:min(1200px,calc(100% - 80px));bottom:var(--ppx-credit-bottom,63px);margin:0;text-align:right;font-size:12px!important;color:#7d8590!important;pointer-events:none}
 .footer-institutional-description p+p a{pointer-events:auto}
 .footer-institutional-description p+p a:after{content:" \2197";font-weight:400}
 @media (max-width:767px){.footer-institutional-description p+p{position:static;transform:none;width:auto;text-align:left;margin-top:16px}}
