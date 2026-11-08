@@ -49,3 +49,14 @@
 @media (max-width:767px){.footer-institutional-description p+p{position:static;transform:none;width:auto;text-align:left;margin-top:16px}}
 .footer-institutional-description a{color:#4ea3ff!important;font-weight:600;text-decoration:none}
 .footer-institutional-description a:hover{color:#fff!important}
+
+/* Formulários (contato e geral) */
+.form-control{border-radius:0!important;transition:border-color .2s,box-shadow .2s}
+.form-control::placeholder{color:#5b636e!important}
+.form-control:focus{border-color:var(--pb)!important;box-shadow:0 0 0 3px #1677e633!important;outline:0}
+.template-contact form{background:var(--pc);border:1px solid var(--pl);padding:36px 36px 28px}
+.template-contact label,.template-contact .form-label{display:block;font-size:12px!important;letter-spacing:.14em;text-transform:uppercase;color:var(--pm)!important;font-weight:600;margin-bottom:8px}
+.template-contact .form-control{background:#05070b!important;border:1px solid var(--pl)!important;color:#fff!important;height:50px;padding:0 16px!important;font-size:15px}
+.template-contact textarea.form-control{height:auto;min-height:150px;padding:14px 16px!important;resize:vertical}
+.template-contact .form-group{margin-bottom:20px!important}
+.template-contact form .btn-primary{width:100%;height:52px}
