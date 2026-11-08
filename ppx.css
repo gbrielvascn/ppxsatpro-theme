@@ -8,7 +8,7 @@
 /* Faixa de ícones da home: ícones preenchidos em degradê */
 .section-icon-text{background:linear-gradient(180deg,#000,#061634);border-top:1px solid var(--pl);border-bottom:1px solid var(--pl);padding:56px 0!important}
 .section-icon-text .icon-text-item{padding:8px 12px}
-.section-icon-text .icon-text-item svg,.section-icon-text .icon-text-item img{width:46px!important;height:46px!important;padding:12px;border-radius:12px;background:linear-gradient(135deg,#ffffff2e,#4ea3ff1f 55%,#ffffff0a);border:1px solid #ffffff2e;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:inset 0 1px 0 #ffffff33;fill:#8cc8ff!important;color:#8cc8ff!important;margin:0 0 14px!important;box-sizing:border-box}
+.section-icon-text .icon-text-item svg,.section-icon-text .icon-text-item img{width:30px!important;height:30px!important;padding:0;background:none;border:0;box-shadow:none;fill:#4ea3ff!important;color:#4ea3ff!important;margin:0 0 14px!important}
 .section-icon-text .icon-text-item-content{padding:0!important;margin:0!important}
 .section-icon-text .icon-text-item-icon{width:auto!important;height:auto!important;margin:0!important;padding:0!important;display:block}
 .section-icon-text .icon-text-item{align-items:flex-start!important}
@@ -40,7 +40,12 @@
 .desktop-list-subitems>li:not(:has(.list-subitems)) .nav-list-link-heading:hover{color:#fff!important}
 
 /* Crédito Zagaia no rodapé */
-.footer-content{position:relative;padding-bottom:72px!important}
-.footer-institutional-description p+p{position:absolute;left:0;right:0;bottom:26px;margin:0;text-align:center;font-size:12px!important;color:#7d8590!important;letter-spacing:.04em;padding-top:0}
+.footer-content{position:relative}
+.footer-legal-container{flex:0 0 100%;border-top:1px solid var(--pl);padding-top:22px;margin-top:4px}
+.footer-legal-container,.footer-legal-container *{text-align:left!important;justify-content:flex-start!important}
+.footer-institutional-description p+p{position:absolute;left:50%;transform:translateX(-50%);width:min(1200px,calc(100% - 80px));bottom:var(--ppx-credit-bottom,58px);margin:0;text-align:right;font-size:12px!important;color:#7d8590!important;pointer-events:none}
+.footer-institutional-description p+p a{pointer-events:auto}
+.footer-institutional-description p+p a:after{content:" \2197";font-weight:400}
+@media (max-width:767px){.footer-institutional-description p+p{position:static;transform:none;width:auto;text-align:left;margin-top:16px}}
 .footer-institutional-description a{color:#4ea3ff!important;font-weight:600;text-decoration:none}
 .footer-institutional-description a:hover{color:#fff!important}
