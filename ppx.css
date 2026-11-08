@@ -133,7 +133,7 @@ body{overflow-x:clip}
 
 /* ===== Sobre v3: mais leve e elegante ===== */
 .ppx-hero-xl{min-height:460px!important}
-.ppx-hero-xl .ppx-title{font-size:64px!important;font-weight:500!important;letter-spacing:.01em}
+.ppx-hero-xl .ppx-title{font-size:64px!important;font-weight:500!important;letter-spacing:.01em;margin:0!important}
 .ppx-hero-xl:before{background:linear-gradient(90deg,rgba(0,0,0,.75),rgba(0,0,0,.2) 60%,rgba(0,0,0,0))!important}
 .ppx-hero-lead{font-size:17px!important;color:#c3c9d2!important}
 .template-page:has(.ppx-hero) .page-content{font-weight:400}
@@ -196,8 +196,8 @@ body{overflow-x:clip}
 
 /* Páginas institucionais: hero padrão um pouco mais baixo */
 .ppx-hero:not(.ppx-hero-xl){min-height:340px}
-.ppx-hero:not(.ppx-hero-xl) .ppx-title{font-size:52px;font-weight:500}
+.ppx-hero:not(.ppx-hero-xl) .ppx-title{font-size:52px!important;font-weight:500;margin:0!important}
 .template-page .page-content.user-content h2{font-size:30px;font-weight:500!important;margin:56px 0 16px}
 .template-page .page-content.user-content h3{font-size:22px;font-weight:500!important}
 .template-page .page-content.user-content{color:#a9b0bb}
-@media (max-width:767px){.ns-section .heading-block{font-size:28px!important}.ppx-hero:not(.ppx-hero-xl) .ppx-title{font-size:38px}.template-category .page-header-title{font-size:34px!important}}
+@media (max-width:767px){.ns-section .heading-block{font-size:28px!important}.ppx-hero:not(.ppx-hero-xl) .ppx-title{font-size:38px!important}.template-category .page-header-title{font-size:34px!important}}
