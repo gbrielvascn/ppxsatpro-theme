@@ -130,3 +130,33 @@
 .template-page:has(.ppx-hero) .page-content{padding-top:0!important}
 .template-page:has(.ppx-hero) main,.template-page:has(.ppx-hero) .section-page{overflow-x:clip}
 body{overflow-x:clip}
+
+/* ===== Sobre v3: mais leve e elegante ===== */
+.ppx-hero-xl{min-height:460px!important}
+.ppx-hero-xl .ppx-title{font-size:64px!important;font-weight:500!important;letter-spacing:.01em}
+.ppx-hero-xl:before{background:linear-gradient(90deg,rgba(0,0,0,.75),rgba(0,0,0,.2) 60%,rgba(0,0,0,0))!important}
+.ppx-hero-lead{font-size:17px!important;color:#c3c9d2!important}
+.template-page:has(.ppx-hero-xl) .page-content{font-weight:400}
+.template-page:has(.ppx-hero-xl) .ppx-split{margin:96px 0 72px;gap:96px}
+.template-page:has(.ppx-hero-xl) .ppx-split h2{font-size:40px!important;font-weight:500!important}
+.template-page:has(.ppx-hero-xl) .ppx-split p{font-size:16px;line-height:1.8;color:#a9b0bb}
+.template-page:has(.ppx-hero-xl) .ppx-stats{background:none;border-top:1px solid var(--pl);border-bottom:0;margin:0 0 24px}
+.template-page:has(.ppx-hero-xl) .ppx-stats div{border-left:0;padding:28px 24px 0 0}
+.template-page:has(.ppx-hero-xl) .ppx-stats b{background:none;-webkit-background-clip:border-box;background-clip:border-box;color:#fff!important;font-size:40px!important;font-weight:500}
+.template-page:has(.ppx-hero-xl) .ppx-stats span{font-size:12px;color:#7d8590}
+.template-page:has(.ppx-hero-xl) .ppx-sec-title{text-align:left;margin:112px 0 32px}
+.template-page:has(.ppx-hero-xl) .ppx-sec-title h2{font-size:36px!important;font-weight:500!important}
+.template-page:has(.ppx-hero-xl) .ppx-grid{gap:48px}
+.template-page:has(.ppx-hero-xl) .ppx-card{background:none;border:0;border-top:1px solid var(--pl);padding:24px 0 0;transform:none!important}
+.template-page:has(.ppx-hero-xl) .ppx-card .ppx-num{font-size:14px;letter-spacing:.2em;font-family:Barlow,sans-serif;margin-bottom:14px}
+.template-page:has(.ppx-hero-xl) .ppx-card h3{font-size:22px!important;font-weight:500!important}
+.template-page:has(.ppx-hero-xl) .ppx-card p{color:#a9b0bb;line-height:1.7}
+.template-page:has(.ppx-hero-xl) .ppx-cats{gap:16px}
+.template-page:has(.ppx-hero-xl) .ppx-cat{aspect-ratio:3/2;border:0}
+.template-page:has(.ppx-hero-xl) .ppx-cat:before{background:linear-gradient(0deg,rgba(0,0,0,.75),rgba(0,0,0,0) 55%)}
+.template-page:has(.ppx-hero-xl) .ppx-cat span{font-size:24px;font-weight:500;left:24px;bottom:22px}
+.template-page:has(.ppx-hero-xl) .ppx-cat small{display:none}
+.template-page:has(.ppx-hero-xl) .ppx-cta{background:none;border:0;border-top:1px solid var(--pl);padding:48px 0 0;margin-top:112px!important}
+.template-page:has(.ppx-hero-xl) .ppx-cta h3{font-size:30px!important;font-weight:500!important}
+.template-page:has(.ppx-hero-xl) .ppx-btn{border-radius:99px;border-color:#ffffff40;padding:14px 26px;letter-spacing:.08em}
+@media (max-width:767px){.ppx-hero-xl .ppx-title{font-size:42px!important}.template-page:has(.ppx-hero-xl) .ppx-split{gap:16px;margin:56px 0 40px}.template-page:has(.ppx-hero-xl) .ppx-grid{gap:28px}.template-page:has(.ppx-hero-xl) .ppx-sec-title{margin:72px 0 24px}}
