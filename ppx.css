@@ -96,3 +96,12 @@
 .account-form-container .btn-link{display:inline-block;margin-top:2px}
 .account-form-container .btn-primary{height:52px;margin:22px 0 22px!important}
 .account-form-container .form-control{background:#05070b!important}
+
+/* Ícones da faixa da home: preenchidos (Font Awesome solid) com degradê */
+.section-icon-text .icon-text-item-icon svg{display:none!important}
+.section-icon-text .icon-text-item-icon:before{content:"";display:block;width:34px;height:34px;margin-bottom:16px;background:linear-gradient(135deg,#8cc8ff,#1677e6 70%);-webkit-mask:var(--ppx-ico) left center/contain no-repeat;mask:var(--ppx-ico) left center/contain no-repeat}
+.section-icon-text .swiper-slide:nth-child(1){--ppx-ico:url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/svgs/solid/truck-fast.svg)}
+.section-icon-text .swiper-slide:nth-child(2){--ppx-ico:url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/svgs/solid/credit-card.svg)}
+.section-icon-text .swiper-slide:nth-child(3){--ppx-ico:url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/svgs/solid/shield-halved.svg)}
+.section-icon-text .swiper-slide:nth-child(4){--ppx-ico:url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/svgs/brands/whatsapp.svg)}
+.section-icon-text .swiper-slide:nth-child(5){--ppx-ico:url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/svgs/solid/arrow-rotate-left.svg)}
