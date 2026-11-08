@@ -420,3 +420,4 @@ body{overflow-x:clip}
 }
 /* carrinho vazio: texto, não caixa com cara de botão */
 .js-empty-ajax-cart .alert{border:0!important;background:transparent!important;color:var(--pm)!important;font-size:15px!important;padding:48px 0 0!important;text-align:center}
+@media (max-width:767px){.template-contact .d-grid,.contact-form-section .d-grid{grid-template-columns:minmax(0,1fr)!important}.contact-form-section .d-grid>*{min-width:0!important}.contact-form-container input,.contact-form-container textarea{max-width:100%!important;box-sizing:border-box}}
