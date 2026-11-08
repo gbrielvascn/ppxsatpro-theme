@@ -107,10 +107,10 @@
 .section-hero img{object-fit:cover;object-position:70% center}
 .section-hero .media-overlay{opacity:1!important;background:linear-gradient(90deg,#020611 0%,#020611f0 40%,#02061166 70%,#02061100 100%)!important}
 .section-hero .hero:after{content:"";position:absolute;left:-120px;bottom:-160px;width:520px;height:420px;background:radial-gradient(closest-side,#1677e655,transparent);pointer-events:none}
-.section-hero .media-content{position:absolute!important;inset:0 auto 0 0!important;width:58%;padding:0 64px!important;display:flex!important;flex-direction:column;justify-content:center!important;align-items:flex-start!important;text-align:left!important;background:none!important;z-index:2}
+.section-hero .media-content{position:absolute!important;inset:0 auto 0 0!important;width:68%;padding:0 64px!important;display:flex!important;flex-direction:column;justify-content:center!important;align-items:flex-start!important;text-align:left!important;background:none!important;z-index:2}
 .section-hero .media-content>*{text-align:left!important}
 .section-hero .media-content:before{content:"Atendimento especializado";display:block;font:600 12px Barlow,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#4ea3ff;margin-bottom:14px}
-.section-hero .heading-block{font-size:48px!important;line-height:1.02!important;max-width:620px;margin:0 0 16px!important;padding:0!important}
+.section-hero .heading-block{font-size:48px!important;line-height:1.02!important;max-width:720px;margin:0 0 16px!important;padding:0!important}
 .section-hero .heading-block:after{display:none!important}
 .section-hero p,.section-hero .text-content{color:#a9b0bb!important;font-size:16px!important;line-height:1.6;max-width:480px;margin:0!important}
 .section-hero .btn{display:inline-flex!important;align-items:center;gap:10px;margin-top:28px!important;background:#fff!important;color:#000!important;border:0!important;border-radius:99px!important;padding:15px 28px 15px 22px!important;font:700 15px Barlow,sans-serif!important;letter-spacing:.02em!important;text-transform:none!important;transition:transform .2s,box-shadow .2s}
