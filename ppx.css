@@ -294,3 +294,20 @@ body{overflow-x:clip}
 .contact-info-container:before{text-transform:none!important;font:700 28px/1.1 Barlow,sans-serif!important;letter-spacing:-.01em}
 .template-category aside *,.template-category [class*=filter] *,.template-search aside *{text-transform:none!important;letter-spacing:0!important}
 .template-page .page-content.user-content p,.template-page .page-content.user-content li{font-size:15px;line-height:1.75}
+
+/* CTA "Precisa de ajuda" v4: borda a borda, monocromático, enxuto */
+.section-hero{padding:0!important}
+.section-hero .hero{max-width:none!important;margin:0!important;height:520px!important;border:0!important;border-radius:0!important}
+.section-hero img{filter:saturate(.35) brightness(1.08);object-position:65% center}
+.section-hero .media-overlay{background:linear-gradient(90deg,#000 0%,#000000e0 32%,#00000080 60%,#00000014 100%)!important}
+.section-hero .media-content{width:auto!important;right:0!important;padding:0 max(40px,calc(50vw - 600px))!important}
+.section-hero .media-content>*{max-width:600px}
+.section-hero .media-content:before,.section-hero .media-content:after{display:none!important;content:none!important}
+@media (max-width:767px){.section-hero .hero{height:500px!important}.section-hero .media-overlay{background:linear-gradient(0deg,#000 0%,#000000d9 50%,#00000033 100%)!important}.section-hero .media-content{padding:28px 24px 36px!important}}
+
+/* Mega menu no padrão novo */
+.nav-desktop .desktop-dropdown{background:#000!important;border-radius:0!important;border-top:1px solid #ffffff1f!important}
+.nav-desktop .desktop-list-subitems .nav-list-link-heading{text-transform:none!important;letter-spacing:-.005em!important;font:700 15px Barlow,sans-serif!important;border-bottom-color:#ffffff14!important}
+.nav-desktop .desktop-list-subitems>li:not(:has(.list-subitems)) .nav-list-link-heading{font-weight:600!important;color:#e6e9ee!important}
+.nav-desktop .list-subitems .nav-list-link{letter-spacing:0!important;color:#a9b0bb!important}
+.nav-desktop .list-subitems .nav-list-link:hover{color:#fff!important}
