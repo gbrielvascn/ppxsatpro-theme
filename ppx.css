@@ -358,3 +358,12 @@ body{overflow-x:clip}
 .js-product-detail a.btn.contact{display:flex!important;align-items:center;justify-content:center;gap:10px;height:56px;margin-top:16px;background:#fafafa!important;color:#000!important;border:0!important;border-radius:4px!important;text-transform:none!important;letter-spacing:0!important;font:700 16px Barlow,sans-serif!important}
 .js-product-detail a.btn.contact:hover{background:#dcdcdc!important}
 .js-product-detail a.btn.contact:before{content:"";width:22px;height:22px;background:#1fa855;-webkit-mask:url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/svgs/brands/whatsapp.svg) center/contain no-repeat;mask:url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/svgs/brands/whatsapp.svg) center/contain no-repeat}
+
+/* ===== CTAs principais no azul do logo (conecta com a marca) ===== */
+:root{--ppx-cta:#1d63e6;--ppx-cta-h:#2f76ff}
+.btn-primary,.js-addtocart,.js-product-detail .js-addtocart:not(.nostock):not([disabled]),.js-item-product .btn,.js-item-product:not(:has(.btn)) .product-item-link:after,.account-form-container .btn-primary,.template-contact form .btn-primary,.section-hero .btn,.section-banners .btn,.js-product-detail a.btn.contact,.js-addtocart.contact{background:var(--ppx-cta)!important;border-color:var(--ppx-cta)!important;color:#fff!important}
+.btn-primary:hover,.js-addtocart:hover,.js-product-detail .js-addtocart:not(.nostock):not([disabled]):hover,.js-item-product .btn:hover,.account-form-container .btn-primary:hover,.section-hero .btn:hover,.section-banners .btn:hover,.section-slideshow .btn:hover,.js-product-detail a.btn.contact:hover{background:var(--ppx-cta-h)!important;border-color:var(--ppx-cta-h)!important;color:#fff!important}
+.section-hero .btn:before,.js-product-detail a.btn.contact:before{background:#fff!important}
+.form-control:focus{border-color:var(--ppx-cta)!important;box-shadow:0 0 0 3px #1d63e633!important}
+.radio-button-icon.checked{background:var(--ppx-cta)!important;border-color:var(--ppx-cta)!important}
+.js-shipping-radio.box.selected{border-color:var(--ppx-cta)!important}
