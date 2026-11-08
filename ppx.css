@@ -55,10 +55,10 @@
 .form-control::placeholder{color:#5b636e!important}
 .form-control:focus{border-color:var(--pb)!important;box-shadow:0 0 0 3px #1677e633!important;outline:0}
 .template-contact form{background:var(--pc);border:1px solid var(--pl);padding:36px 36px 28px}
-.template-contact label,.template-contact .form-label{display:block;font-size:12px!important;letter-spacing:.14em;text-transform:uppercase;color:var(--pm)!important;font-weight:600;margin-bottom:8px}
-.template-contact .form-control{background:#05070b!important;border:1px solid var(--pl)!important;color:#fff!important;height:50px;padding:0 16px!important;font-size:15px}
+.template-contact label,.template-contact .form-label,.account-form-container label{display:block;font-size:12px!important;letter-spacing:.14em;text-transform:uppercase;color:var(--pm)!important;font-weight:600;margin-bottom:8px}
+.template-contact .form-control,.account-form-container .form-control{background:#05070b!important;border:1px solid var(--pl)!important;color:#fff!important;height:50px;padding:0 16px!important;font-size:15px}
 .template-contact textarea.form-control{height:auto;min-height:150px;padding:14px 16px!important;resize:vertical}
-.template-contact .form-group{margin-bottom:20px!important}
+.template-contact .form-group,.account-form-container .form-group{margin-bottom:20px!important}
 .template-contact form .btn-primary{width:100%;height:52px}
 
 /* ===== Páginas institucionais v2 ===== */
@@ -89,3 +89,10 @@
 .ppx-cta{margin-top:96px!important}
 .ppx-legal{text-align:center;font-size:12px!important;color:#7d8590!important;margin-top:32px}
 @media (max-width:767px){.ppx-hero-xl{min-height:420px;padding:28px!important}.ppx-hero-xl .ppx-title{font-size:46px!important}.ppx-split{grid-template-columns:1fr;gap:20px;margin:48px 0 32px}.ppx-split h2{font-size:38px!important}.ppx-cats{grid-template-columns:1fr}.ppx-cat{aspect-ratio:4/3}.ppx-sec-title{margin:56px 0 24px}.ppx-sec-title h2{font-size:32px!important}}
+
+/* Login/cadastro: respiro */
+.account-form-container{padding:48px 44px 40px!important}
+.account-form-container .form-group{margin-bottom:22px!important}
+.account-form-container .btn-link{display:inline-block;margin-top:2px}
+.account-form-container .btn-primary{height:52px;margin:22px 0 22px!important}
+.account-form-container .form-control{background:#05070b!important}
