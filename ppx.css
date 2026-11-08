@@ -3,3 +3,32 @@
 .footer-content{padding:64px 40px 24px!important}
 .footer-main-info,.footer-secondary-info{width:100%;max-width:1200px!important;margin:0 auto!important;padding-left:0!important;padding-right:0!important;box-sizing:border-box}
 @media (max-width:767px){.footer-content{padding:40px 20px 16px!important}}
+
+/* ===== v3: ícones, CTA, frete, mega menu ===== */
+/* Faixa de ícones da home: ícones preenchidos em degradê */
+.section-icon-text{background:linear-gradient(180deg,#000,#061634);border-top:1px solid var(--pl);border-bottom:1px solid var(--pl);padding:56px 0!important}
+.section-icon-text .icon-text-item{padding:8px 12px}
+.section-icon-text .icon-text-item svg,.section-icon-text .icon-text-item img{width:60px!important;height:60px!important;padding:16px;border-radius:16px;background:linear-gradient(135deg,#5fb0ff,#1677e6 45%,#0a3478);fill:#fff!important;color:#fff!important;box-shadow:0 12px 28px -10px #1677e6;margin-bottom:18px;box-sizing:border-box}
+.section-icon-text .icon-text-item-title{font-family:var(--heading-font)!important;font-size:20px!important;text-transform:uppercase;letter-spacing:.04em;color:#fff;margin-bottom:6px}
+.section-icon-text .icon-text-item-description,.section-icon-text .icon-text-item p{color:#a9b0bb!important;font-size:14px!important;line-height:1.5}
+
+/* CTA "Precisa de ajuda" */
+.section-hero .media-content{max-width:760px!important;padding:48px 56px!important;background:#050c1cb8;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid #ffffff26}
+.section-hero .heading-block{font-size:46px!important}
+.section-hero p,.section-hero .text-content{color:#c3c9d2!important;font-size:17px!important;line-height:1.6}
+.section-hero .btn{display:inline-flex!important;align-items:center;gap:10px;margin-top:8px;background:#1fa855!important;border:0!important;border-radius:99px!important;padding:16px 32px 16px 26px!important;font-size:16px!important;font-weight:600!important;letter-spacing:.04em!important;text-transform:none!important;color:#fff!important}
+.section-hero .btn:hover{background:#25d366!important}
+.section-hero .btn:before{content:"";width:22px;height:22px;background:#fff;-webkit-mask:url(https://cdn.jsdelivr.net/npm/simple-icons@9.0.0/icons/whatsapp.svg) center/contain no-repeat;mask:url(https://cdn.jsdelivr.net/npm/simple-icons@9.0.0/icons/whatsapp.svg) center/contain no-repeat}
+
+/* Opções de frete (carrinho e produto) */
+.js-shipping-radio.box{background:var(--pc)!important;border:1px solid var(--pl)!important;border-radius:0!important;transition:border-color .2s}
+.js-shipping-radio.box.selected,.js-shipping-radio.box:hover{border-color:var(--pb)!important}
+.radio-button-icon{border-radius:50%!important;border-color:#ffffff73!important}
+.radio-button-icon.checked{background:var(--pb)!important;border-color:var(--pb)!important;box-shadow:inset 0 0 0 3px #0b0d12}
+.js-shipping-radio .shipping-price,.js-shipping-radio [class*=price]{font-family:var(--heading-font);font-size:20px;color:#fff}
+
+/* Mega menu: categorias sem subcategorias viram links com seta */
+.desktop-list-subitems>li:not(:has(.list-subitems)) .nav-list-link-heading{border:0!important;padding:0!important;margin:0!important;color:#c3c9d2!important}
+.desktop-list-subitems>li:not(:has(.list-subitems)) .nav-list-link-heading:after{content:" →";color:var(--pb)}
+.desktop-list-subitems>li:not(:has(.list-subitems)){margin-bottom:14px!important}
+.desktop-list-subitems>li:not(:has(.list-subitems)) .nav-list-link-heading:hover{color:#fff!important}
