@@ -367,3 +367,5 @@ body{overflow-x:clip}
 .form-control:focus{border-color:var(--ppx-cta)!important;box-shadow:0 0 0 3px #1d63e633!important}
 .radio-button-icon.checked{background:var(--ppx-cta)!important;border-color:var(--ppx-cta)!important}
 .js-shipping-radio.box.selected{border-color:var(--ppx-cta)!important}
+/* CTA azul mantendo a geometria Starlink: caixa alta, tracking largo, sem sombra */
+.btn-primary,.js-addtocart,.js-item-product .btn,.section-hero .btn,.section-banners .btn,.js-product-detail a.btn.contact{text-transform:uppercase!important;letter-spacing:.14em!important;font-weight:600!important;box-shadow:none!important;transition:background .2s ease,border-color .2s ease!important}
