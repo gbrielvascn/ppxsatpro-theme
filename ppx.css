@@ -339,3 +339,4 @@ body{overflow-x:clip}
 /* Área de imagem dos produtos em cinza claro, mais suave que branco puro */
 .product-item-image-container,.product-slide-link{background:#f3f4f6!important}
 @media (max-width:767px){.section-banners .banner-block{min-height:360px}}
+.product-item-image,.product-slider-image{mix-blend-mode:multiply}
