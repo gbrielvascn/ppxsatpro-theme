@@ -340,3 +340,6 @@ body{overflow-x:clip}
 .product-item-image-container,.product-slide-link{background:#f3f4f6!important}
 @media (max-width:767px){.section-banners .banner-block{min-height:360px}}
 .product-item-image,.product-slider-image{mix-blend-mode:multiply}
+/* Hover dos botões brancos: só escurece levemente, sem sombra */
+.section-hero .btn:hover,.section-banners .btn:hover,.section-slideshow .btn:hover{background:#dcdcdc!important;color:#000!important;box-shadow:none!important;transform:none!important}
+.btn-primary:hover,.js-addtocart:hover,.js-item-product .btn:hover{box-shadow:none!important;transform:none!important}
