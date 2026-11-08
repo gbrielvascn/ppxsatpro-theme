@@ -386,3 +386,23 @@ body{overflow-x:clip}
 .btn,.js-addtocart,.js-product-detail .js-addtocart,.js-item-product .btn,.js-item-product .js-addtocart,.js-item-product:not(:has(.btn)) .product-item-link:after{text-transform:none!important;letter-spacing:0!important;font-weight:700!important}
 .js-item-product .btn,.js-item-product .js-addtocart,.js-item-product:not(:has(.btn)) .product-item-link:after,.js-product-detail .js-addtocart,.js-product-detail a.btn.contact{border-radius:4px!important;font-size:15px!important}
 .section-banners .btn{border-radius:0!important}
+/* ===== Correções mobile ===== */
+/* logo do cabeçalho transparente (home) no mesmo tamanho do logo normal */
+.logo-transparent img,.logo-transparent .logo-img{max-width:174px!important;max-height:40px!important;width:auto!important;height:auto!important}
+@media (min-width:768px){.logo-transparent img,.logo-transparent .logo-img{max-width:240px!important;max-height:48px!important}}
+/* preço dos cards nunca herda o tamanho gigante do preço da página de produto */
+.template-product .js-item-product [class*=price-display],.template-product .js-item-product .js-price-display,.template-product .js-item-product .product-item-price{font-size:22px!important}
+@media (max-width:767px){
+ /* galeria do produto: sem sticky no celular (sobrepunha as informações ao rolar) */
+ .js-product-images{position:static!important;top:auto!important}
+ .js-product-info{padding-left:0!important}
+ .template-product .js-price-display,.template-product [class*=price-display]{font-size:34px!important}
+ .template-product .js-item-product [class*=price-display],.template-product .js-item-product .product-item-price{font-size:20px!important}
+ /* miniaturas quadradas e uniformes */
+ .product-thumbs img,[class*=thumb] img{aspect-ratio:1/1;object-fit:contain!important;width:100%!important;height:auto!important;background:#fff}
+ /* rodapé em uma coluna */
+ .footer-main-info{display:grid!important;grid-template-columns:1fr!important;gap:28px!important;padding:0 20px 32px!important}
+ .footer-main-info>*{width:100%!important;max-width:none!important;left:auto!important}
+ .footer-menu-title{border-bottom:1px solid var(--pl)}
+ .product-item-price{font-size:20px!important}
+}
