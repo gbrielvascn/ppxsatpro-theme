@@ -105,3 +105,8 @@
 .section-icon-text .swiper-slide:nth-child(3){--ppx-ico:url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/svgs/solid/shield-halved.svg)}
 .section-icon-text .swiper-slide:nth-child(4){--ppx-ico:url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/svgs/brands/whatsapp.svg)}
 .section-icon-text .swiper-slide:nth-child(5){--ppx-ico:url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/svgs/solid/arrow-rotate-left.svg)}
+
+/* Cadastro */
+.template-account-register .account-form-container{max-width:560px}
+.account-form-container form>p:first-child,.account-form-container>p:first-child,.account-form-container form>div:first-child>p{color:var(--pm)!important;text-align:center;font-size:15px;line-height:1.5;margin:0 0 30px!important;padding-bottom:24px;border-bottom:1px solid var(--pl)}
+.account-form-container .g-recaptcha,.account-form-container [class*=recaptcha]{display:flex;justify-content:center;margin:8px 0 4px}
