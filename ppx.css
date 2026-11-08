@@ -255,3 +255,36 @@ body{overflow-x:clip}
 .js-product-detail .js-addtocart:not(.nostock):not([disabled]){background:#fafafa!important;color:#000!important;border-color:#fafafa!important}
 .js-product-detail .js-addtocart:not(.nostock):not([disabled]):hover{background:#dcdcdc!important}
 .ppx-stats span,.navigation-bar span{text-transform:none!important;letter-spacing:0!important}
+
+/* ===================================================================
+   Unificação monocromática (preto/branco, estilo Starlink).
+   Azul fica só no logo; verde só no WhatsApp.
+   =================================================================== */
+:root{--pb:#fafafa}
+/* Faixa de ícones */
+.section-icon-text{background:#000!important;border-top:1px solid #ffffff14!important;border-bottom:1px solid #ffffff14!important;padding:64px 0!important}
+.section-icon-text .icon-text-item-icon:before{background:#fafafa!important;width:28px;height:28px}
+.section-icon-text .icon-text-item-title{font-size:18px!important}
+/* Rodapé */
+.section-footer,.footer-content{background:#000!important}
+.section-footer{border-top:1px solid #ffffff14!important}
+/* CTA da home */
+.section-hero .hero:after{display:none!important}
+.section-hero .hero{border-color:#ffffff1f!important}
+/* Rótulos, números e links sem azul */
+.ppx-eyebrow,.ppx-kicker,.section-hero .media-content:before{color:#a9b0bb!important}
+.ppx-card .ppx-num{color:#fafafa!important}
+.btn-link,.page-content.user-content a,.footer-institutional-description a,.js-product-detail .btn-link{color:#fafafa!important;font-weight:600!important}
+.btn-link:hover,.page-content.user-content a:hover{color:#c3c9d2!important}
+.ppx-cat span:after{color:#fafafa!important}
+/* Blocos que tinham degradê azul */
+.contact-info-container,.ppx-cta{background:#0b0d12!important}
+/* Hovers e estados selecionados em branco */
+.js-item-product:hover,.section-banners .banner-block:hover,.ppx-cat:hover,.js-shipping-radio.box.selected,.js-shipping-radio.box:hover,.ppx-card:hover{border-color:#ffffff59!important}
+.radio-button-icon.checked{background:#fafafa!important;border-color:#fafafa!important}
+.form-control:focus{border-color:#fafafa!important;box-shadow:0 0 0 3px #ffffff1a!important}
+.nav-desktop a:hover,.desktop-list-subitems .nav-list-link-heading:hover{color:#fff!important}
+.desktop-list-subitems>li:not(:has(.list-subitems)) .nav-list-link-heading:after{color:#a9b0bb!important}
+.desktop-dropdown{border-top:1px solid #ffffff1f!important}
+/* Indicadores do carrossel e setas */
+.swiper-pagination-bullet{background:#fafafa!important}
