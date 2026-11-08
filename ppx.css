@@ -349,3 +349,12 @@ body{overflow-x:clip}
 .section-banners .media-content{padding:72px 24px 22px!important}
 .section-banners .heading-block{margin:0 0 12px!important}
 @media (max-width:767px){.section-banners .banner-block{min-height:0!important}}
+
+/* Produto sob consulta: um único botão de WhatsApp + texto explicativo */
+.js-product-detail input.js-addtocart.contact{display:none!important}
+.buy-button-container:has(a.contact){display:block!important;width:100%}
+.buy-button-container:has(a.contact):before{content:"Preço sob consulta";display:block;font:700 30px/1.1 Barlow,sans-serif;letter-spacing:-.01em;color:#fff;margin:0 0 8px}
+.buy-button-container:has(a.contact):after{content:"Fale com a nossa equipe e receba valor e prazo de entrega na hora.";display:block;color:#a9b0bb;font-size:14px;line-height:1.5;margin-top:12px}
+.js-product-detail a.btn.contact{display:flex!important;align-items:center;justify-content:center;gap:10px;height:56px;margin-top:16px;background:#fafafa!important;color:#000!important;border:0!important;border-radius:4px!important;text-transform:none!important;letter-spacing:0!important;font:700 16px Barlow,sans-serif!important}
+.js-product-detail a.btn.contact:hover{background:#dcdcdc!important}
+.js-product-detail a.btn.contact:before{content:"";width:22px;height:22px;background:#1fa855;-webkit-mask:url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/svgs/brands/whatsapp.svg) center/contain no-repeat;mask:url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/svgs/brands/whatsapp.svg) center/contain no-repeat}
