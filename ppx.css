@@ -40,6 +40,7 @@
 .desktop-list-subitems>li:not(:has(.list-subitems)) .nav-list-link-heading:hover{color:#fff!important}
 
 /* Crédito Zagaia no rodapé */
-.footer-institutional-description p+p{margin-top:16px;font-size:12px!important;color:#7d8590!important;letter-spacing:.04em}
+.footer-content{position:relative;padding-bottom:72px!important}
+.footer-institutional-description p+p{position:absolute;left:0;right:0;bottom:26px;margin:0;text-align:center;font-size:12px!important;color:#7d8590!important;letter-spacing:.04em;padding-top:0}
 .footer-institutional-description a{color:#4ea3ff!important;font-weight:600;text-decoration:none}
 .footer-institutional-description a:hover{color:#fff!important}
