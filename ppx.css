@@ -8,7 +8,7 @@
 /* Faixa de ícones da home: ícones preenchidos em degradê */
 .section-icon-text{background:linear-gradient(180deg,#000,#061634);border-top:1px solid var(--pl);border-bottom:1px solid var(--pl);padding:56px 0!important}
 .section-icon-text .icon-text-item{padding:8px 12px}
-.section-icon-text .icon-text-item svg,.section-icon-text .icon-text-item img{width:64px!important;height:64px!important;padding:16px;border-radius:18px;background:linear-gradient(135deg,#ffffff2e,#4ea3ff1f 55%,#ffffff0a);border:1px solid #ffffff2e;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:inset 0 1px 0 #ffffff40,0 8px 32px -12px #1677e680;fill:#8cc8ff!important;color:#8cc8ff!important;margin:0 0 18px!important;box-sizing:border-box}
+.section-icon-text .icon-text-item svg,.section-icon-text .icon-text-item img{width:46px!important;height:46px!important;padding:12px;border-radius:12px;background:linear-gradient(135deg,#ffffff2e,#4ea3ff1f 55%,#ffffff0a);border:1px solid #ffffff2e;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:inset 0 1px 0 #ffffff33;fill:#8cc8ff!important;color:#8cc8ff!important;margin:0 0 14px!important;box-sizing:border-box}
 .section-icon-text .icon-text-item-content{padding:0!important;margin:0!important}
 .section-icon-text .icon-text-item-icon{width:auto!important;height:auto!important;margin:0!important;padding:0!important;display:block}
 .section-icon-text .icon-text-item{align-items:flex-start!important}
@@ -38,3 +38,8 @@
 .desktop-list-subitems>li:not(:has(.list-subitems)) .nav-list-link-heading:after{content:" →";color:var(--pb)}
 .desktop-list-subitems>li:not(:has(.list-subitems)){margin-bottom:14px!important}
 .desktop-list-subitems>li:not(:has(.list-subitems)) .nav-list-link-heading:hover{color:#fff!important}
+
+/* Crédito Zagaia no rodapé */
+.footer-institutional-description p+p{margin-top:16px;font-size:12px!important;color:#7d8590!important;letter-spacing:.04em}
+.footer-institutional-description a{color:#4ea3ff!important;font-weight:600;text-decoration:none}
+.footer-institutional-description a:hover{color:#fff!important}
