@@ -252,3 +252,6 @@ body{overflow-x:clip}
 .footer-menu-title{font-size:15px!important;letter-spacing:0!important}
 .ppx-card .ppx-num{letter-spacing:0!important}
 .ppx-cat span:after{letter-spacing:0!important;text-transform:none}
+.js-product-detail .js-addtocart:not(.nostock):not([disabled]){background:#fafafa!important;color:#000!important;border-color:#fafafa!important}
+.js-product-detail .js-addtocart:not(.nostock):not([disabled]):hover{background:#dcdcdc!important}
+.ppx-stats span,.navigation-bar span{text-transform:none!important;letter-spacing:0!important}
