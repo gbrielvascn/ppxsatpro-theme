@@ -367,14 +367,12 @@ body{overflow-x:clip}
 .form-control:focus{border-color:var(--ppx-cta)!important;box-shadow:0 0 0 3px #1d63e633!important}
 .radio-button-icon.checked{background:var(--ppx-cta)!important;border-color:var(--ppx-cta)!important}
 .js-shipping-radio.box.selected{border-color:var(--ppx-cta)!important}
-/* CTA azul mantendo a geometria Starlink: caixa alta, tracking largo, sem sombra */
-.btn-primary,.js-addtocart,.js-item-product .btn,.section-hero .btn,.section-banners .btn,.js-product-detail a.btn.contact{text-transform:uppercase!important;letter-spacing:.14em!important;font-weight:600!important;box-shadow:none!important;transition:background .2s ease,border-color .2s ease!important}
 /* ===== Hierarquia Starlink: 1 CTA cheio por tela, o resto discreto ===== */
 /* cards de produto: botão vazado, enche de azul no hover */
 .js-item-product .btn,.js-item-product .js-addtocart,.js-item-product:not(:has(.btn)) .product-item-link:after{background:transparent!important;border:1px solid rgba(255,255,255,.28)!important;color:#fff!important}
 .js-item-product:hover .btn,.js-item-product:hover .js-addtocart,.js-item-product .btn:hover,.js-item-product:not(:has(.btn)):hover .product-item-link:after{background:var(--ppx-cta)!important;border-color:var(--ppx-cta)!important}
 /* tiles de categoria: link de texto com seta, sem caixa */
-.section-banners .btn{background:transparent!important;border:0!important;border-bottom:1px solid rgba(255,255,255,.55)!important;padding:0 0 6px!important;height:auto!important;min-height:0!important;font-size:12px!important;letter-spacing:.2em!important;color:#fff!important}
+.section-banners .btn{background:transparent!important;border:0!important;border-bottom:1px solid rgba(255,255,255,.55)!important;padding:0 0 6px!important;height:auto!important;min-height:0!important;font-size:15px!important;font-weight:700!important;letter-spacing:0!important;text-transform:none!important;color:#fff!important}
 .section-banners .btn:after{content:" \2192";margin-left:8px;transition:margin .2s ease}
 .section-banners .btn:hover,.section-banners .banner-block:hover .btn{background:transparent!important;border-color:#fff!important}
 .section-banners .btn:hover:after,.section-banners .banner-block:hover .btn:after{margin-left:14px}
@@ -382,4 +380,9 @@ body{overflow-x:clip}
 :is(.footer-contact-info-container ul,.contact-info-item) a{background:transparent!important;border:1px solid rgba(255,255,255,.35)!important;border-radius:0!important;padding:14px 24px 14px 18px!important}
 .footer-contact-info-container ul a:hover,.contact-info-item a:hover{background:transparent!important;border-color:#fff!important}
 :is(.footer-contact-info-container ul,.contact-info-item) a:before{background:#25d366!important}
-:is(.footer-contact-info-container ul,.contact-info-item) a:after{font-size:12px!important;letter-spacing:.18em!important;text-transform:uppercase}
+:is(.footer-contact-info-container ul,.contact-info-item) a:after{font-size:15px!important;font-weight:700;letter-spacing:0!important;text-transform:none}
+:is(.footer-contact-info-container ul,.contact-info-item) a{border-radius:4px!important}
+/* Padrão Starlink: todos os botões em caixa normal, bold, sem tracking, raio 4px */
+.btn,.js-addtocart,.js-product-detail .js-addtocart,.js-item-product .btn,.js-item-product .js-addtocart,.js-item-product:not(:has(.btn)) .product-item-link:after{text-transform:none!important;letter-spacing:0!important;font-weight:700!important}
+.js-item-product .btn,.js-item-product .js-addtocart,.js-item-product:not(:has(.btn)) .product-item-link:after,.js-product-detail .js-addtocart,.js-product-detail a.btn.contact{border-radius:4px!important;font-size:15px!important}
+.section-banners .btn{border-radius:0!important}
