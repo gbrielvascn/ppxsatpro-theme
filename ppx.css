@@ -413,3 +413,10 @@ body{overflow-x:clip}
  .products-grid-search-heading{font-size:16px!important;font-family:"Barlow",sans-serif!important;font-weight:500!important;color:var(--pm)!important;text-transform:none!important;margin:0 0 16px!important}
  .footer-menu-title{border-bottom:0!important;margin-bottom:0!important}
 }
+/* menu mobile no estilo Starlink: itens grandes, caixa normal */
+@media (max-width:767px){
+ .modal-body .nav-item>.nav-list-link{font-family:"Barlow",sans-serif!important;font-size:20px!important;font-weight:600!important;letter-spacing:0!important;text-transform:none!important;padding:20px 24px!important;color:#fff!important}
+ .modal-body .nav-item{border-color:var(--pl)!important}
+}
+/* carrinho vazio: texto, não caixa com cara de botão */
+.js-empty-ajax-cart .alert{border:0!important;background:transparent!important;color:var(--pm)!important;font-size:15px!important;padding:48px 0 0!important;text-align:center}
