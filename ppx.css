@@ -291,3 +291,6 @@ body{overflow-x:clip}
 .ns-section.section-banners .heading-block{font-size:26px!important}
 .ns-section.section-hero .heading-block{font-size:44px!important}
 @media (max-width:767px){.ns-section.section-banners .heading-block{font-size:22px!important}.ns-section.section-hero .heading-block{font-size:30px!important}}
+.contact-info-container:before{text-transform:none!important;font:700 28px/1.1 Barlow,sans-serif!important;letter-spacing:-.01em}
+.template-category aside *,.template-category [class*=filter] *,.template-search aside *{text-transform:none!important;letter-spacing:0!important}
+.template-page .page-content.user-content p,.template-page .page-content.user-content li{font-size:15px;line-height:1.75}
