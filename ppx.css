@@ -429,3 +429,8 @@ body{overflow-x:clip}
 .footer-institutional-description p+p a:after{content:none!important}
 @media (max-width:767px){.footer-institutional-description p+p{justify-content:flex-start;margin-top:18px}}
 .footer-powered-by{display:none!important}
+/* ===== Sob consulta automático: sem estoque = sem preço e botão de WhatsApp (script no GTM) ===== */
+.js-product-detail.ppx-consulta .js-price-display,.js-product-detail.ppx-consulta .js-compare-price-display,.js-product-detail.ppx-consulta .js-max-installments-container,.js-product-detail.ppx-consulta .js-max-installments,.js-product-detail.ppx-consulta [class*=payment-discount],.js-product-detail.ppx-consulta .js-offer-label,
+.js-product-detail:has(input.js-prod-submit-form.nostock) .js-price-display,.js-product-detail:has(input.js-prod-submit-form.nostock) .js-compare-price-display,.js-product-detail:has(input.js-prod-submit-form.nostock) .js-max-installments-container,.js-product-detail:has(input.js-prod-submit-form.nostock) [class*=payment-discount]{display:none!important}
+.js-product-detail.ppx-consulta input.js-prod-submit-form{display:none!important}
+.js-item-product.ppx-consulta .product-item-price-container,.js-item-product.ppx-consulta .js-max-installments-container,.js-item-product.ppx-consulta .product-item-installments,.js-item-product.ppx-consulta .product-item-payment-discount{display:none!important}

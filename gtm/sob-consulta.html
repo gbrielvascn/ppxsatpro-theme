@@ -1,0 +1,62 @@
+<script>
+(function(){
+  var WA = "5511956174075";
+  function waHref(name, sku){
+    var t = "Olá! Gostaria de um orçamento do produto: " + name + (sku ? " (SKU " + sku + ")" : "") + "\n" + location.href.split("?")[0];
+    return "https://wa.me/" + WA + "?text=" + encodeURIComponent(t);
+  }
+  // Página do produto: sem preço (contact) OU sem estoque (nostock) = sob consulta
+  function pdp(){
+    var box = document.querySelector(".js-product-detail");
+    if(!box) return;
+    var b = box.querySelector("input.js-addtocart.js-prod-submit-form");
+    if(!b) return;
+    var out = b.classList.contains("contact") || b.classList.contains("nostock");
+    var a = box.querySelector("a[data-ppx-wa]");
+    if(out){
+      if(!box.classList.contains("ppx-consulta")) box.classList.add("ppx-consulta");
+      if(!a){
+        var name = (window.LS && LS.product && LS.product.name) || ((box.querySelector("h1") || document.querySelector("h1") || {}).textContent || "").trim();
+        var sku = ((box.querySelector(".js-product-sku") || {}).textContent || (window.LS && LS.variants && LS.variants[0] && LS.variants[0].sku) || "");
+        sku = String(sku).replace(/SKU:?/i, "").trim();
+        a = document.createElement("a");
+        a.href = waHref(name, sku);
+        a.target = "_blank"; a.rel = "noopener";
+        a.className = "btn btn-primary btn-big btn-block contact";
+        a.setAttribute("data-ppx-wa", "1");
+        a.style.cssText = "display:block;text-align:center;text-decoration:none";
+        a.textContent = "Consultar preço no WhatsApp";
+        b.parentNode.insertBefore(a, b);
+      }
+      if(b.style.display !== "none") b.style.display = "none";
+    } else {
+      if(box.classList.contains("ppx-consulta")) box.classList.remove("ppx-consulta");
+      if(a) a.parentNode.removeChild(a);
+      if(b.style.display === "none") b.style.display = "";
+    }
+  }
+  // Cards: todas as variações com estoque 0 = sob consulta (mesmo com preço cadastrado)
+  function cards(){
+    var l = document.querySelectorAll(".js-item-product");
+    for(var i = 0; i < l.length; i++){
+      var it = l[i], v = [];
+      try { v = JSON.parse(it.getAttribute("data-variants") || "[]"); } catch(e) {}
+      if(!v.length) continue;
+      var out = v.every(function(x){ return x.stock === 0 || x.stock === "0"; });
+      var priced = v.some(function(x){ return x.price_number > 0; });
+      if(out && priced){
+        if(!it.classList.contains("ppx-consulta")) it.classList.add("ppx-consulta");
+        var f = it.querySelector("form.js-product-form");
+        if(f){ it._ppxForm = f; it._ppxParent = f.parentNode; f.parentNode.removeChild(f); }
+      } else if(it.classList.contains("ppx-consulta")){
+        it.classList.remove("ppx-consulta");
+        if(it._ppxForm && it._ppxParent) it._ppxParent.appendChild(it._ppxForm);
+      }
+    }
+  }
+  function run(){ try { pdp(); } catch(e) {} try { cards(); } catch(e) {} }
+  var t; function later(){ clearTimeout(t); t = setTimeout(run, 50); }
+  if(document.readyState === "loading") document.addEventListener("DOMContentLoaded", run); else run();
+  new MutationObserver(later).observe(document.documentElement, { childList: true, subtree: true, attributes: true, attributeFilter: ["class", "data-variants"] });
+})();
+</script>
