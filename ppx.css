@@ -421,3 +421,11 @@ body{overflow-x:clip}
 /* carrinho vazio: texto, não caixa com cara de botão */
 .js-empty-ajax-cart .alert{border:0!important;background:transparent!important;color:var(--pm)!important;font-size:15px!important;padding:48px 0 0!important;text-align:center}
 @media (max-width:767px){.template-contact .d-grid,.contact-form-section .d-grid{grid-template-columns:minmax(0,1fr)!important}.contact-form-section .d-grid>*{min-width:0!important}.contact-form-container input,.contact-form-container textarea{max-width:100%!important;box-sizing:border-box}}
+/* ===== Crédito "Criado por Zagaia" com logotipo (backlink) e sem selo da plataforma ===== */
+.footer-institutional-description p+p{font-size:0!important;line-height:0;display:flex;align-items:center;justify-content:flex-end;gap:8px}
+.footer-institutional-description p+p:before{content:"Criado por";font-size:12px;line-height:1;color:#7d8590}
+.footer-institutional-description p+p a{display:inline-block;width:72px;height:17px;background:url('assets/zagaia-logo-white.svg') left center/contain no-repeat;font-size:0!important;color:transparent!important;opacity:.85;transition:opacity .2s ease;vertical-align:middle}
+.footer-institutional-description p+p a:hover{opacity:1}
+.footer-institutional-description p+p a:after{content:none!important}
+@media (max-width:767px){.footer-institutional-description p+p{justify-content:flex-start;margin-top:18px}}
+.footer-powered-by{display:none!important}
