@@ -434,3 +434,5 @@ body{overflow-x:clip}
 .js-product-detail:has(input.js-prod-submit-form.nostock) .js-price-display,.js-product-detail:has(input.js-prod-submit-form.nostock) .js-compare-price-display,.js-product-detail:has(input.js-prod-submit-form.nostock) .js-max-installments-container,.js-product-detail:has(input.js-prod-submit-form.nostock) [class*=payment-discount]{display:none!important}
 .js-product-detail.ppx-consulta input.js-prod-submit-form{display:none!important}
 .js-item-product.ppx-consulta .product-item-price-container,.js-item-product.ppx-consulta .js-max-installments-container,.js-item-product.ppx-consulta .product-item-installments,.js-item-product.ppx-consulta .product-item-payment-discount{display:none!important}
+.js-product-detail.ppx-consulta .form-quantity-container,.js-product-detail.ppx-consulta .js-product-payments-container,.js-product-detail:has(input.js-prod-submit-form.nostock) .form-quantity-container,.js-product-detail:has(input.js-prod-submit-form.nostock) .js-product-payments-container{display:none!important}
+.js-product-detail.ppx-consulta .product-actions{grid-template-columns:1fr!important}
