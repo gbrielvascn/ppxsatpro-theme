@@ -436,3 +436,14 @@ body{overflow-x:clip}
 .js-item-product.ppx-consulta .product-item-price-container,.js-item-product.ppx-consulta .js-max-installments-container,.js-item-product.ppx-consulta .product-item-installments,.js-item-product.ppx-consulta .product-item-payment-discount{display:none!important}
 .js-product-detail.ppx-consulta .form-quantity-container,.js-product-detail.ppx-consulta .js-product-payments-container,.js-product-detail:has(input.js-prod-submit-form.nostock) .form-quantity-container,.js-product-detail:has(input.js-prod-submit-form.nostock) .js-product-payments-container{display:none!important}
 .js-product-detail.ppx-consulta .product-actions{grid-template-columns:1fr!important}
+
+/* ===== Rodapé: só o link do WhatsApp vira botão; telefone e e-mail ficam como texto ===== */
+:is(.footer-contact-info-container ul,.contact-info-item) a:is([href^="tel:"],[href^="mailto:"]){display:inline-block!important;font-size:15px!important;padding:0!important;border:0!important;background:none!important;color:#a9b0bb!important;font-weight:400}
+:is(.footer-contact-info-container ul,.contact-info-item) a:is([href^="tel:"],[href^="mailto:"]):before,:is(.footer-contact-info-container ul,.contact-info-item) a:is([href^="tel:"],[href^="mailto:"]):after{content:none!important;display:none!important}
+:is(.footer-contact-info-container ul,.contact-info-item) a:is([href^="tel:"],[href^="mailto:"]):hover{color:#fff!important}
+.footer-contact-info-container ul li+li{margin-top:12px}
+
+/* ===== Quebras equilibradas (sem palavra sozinha na última linha) ===== */
+h1,h2,h3,h4,.h1,.h2,.h3,.h4,.js-item-name,.item-name,.product-item-name,.section-title{text-wrap:balance}
+body{text-wrap:pretty}
+.footer-menu-list li,.footer-contact-info-container li{text-wrap:balance}
